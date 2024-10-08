@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Treats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        .hero {
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+        }
+
+        .btn {
+            background-color: gold;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .flavor-card {
+            background-color: beige;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-image {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Freshly Popped, Naturally Delicious</h1>
+            <a href="#flavors" class="btn">View Flavors</a>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="flavors">
+            <h2>Our Flavors</h2>
+            <div class="flavor-card">
+                <h3>Plain</h3>
+                <p>Crispy popcorn tossed in rich, Plain goodness.</p>
+                <p>Price: ₦150</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="flavor-card">
+                <h3>Milky</h3>
+                <p>Sweet Milky drizzled on our classic popcorn.</p>
+                <p>Price: ₦800</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="flavor-card">
+                <h3>Caramel</h3>
+                <p>Sweet Caramel drizzled on our classic popcorn.</p>
+                <p>Price: ₦800</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="flavor-card">
+                <h3>Chocolate</h3>
+                <p>Sweet Chocolate drizzled on our classic popcorn.</p>
+                <p>Price: ₦800</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more flavors as needed -->
+        </section>
+
+        <section id="payment">
+            <h2>Payment Instructions</h2>
+            <p>After submitting your order, we will email you with payment instructions.</p>
+            <form action="Hauwakabir2000@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="flavor">Flavor:</label>
+                <select id="flavor" name="flavor">
+                    <option value="plain">plain</option>
+                    <option value="Caramel">Caramel</option>
+                    <option value="Cheese">Cheese</option>
+                    <option value="Milky">Milky</option>
+                </select>
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </section>
+
+
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>"The best popcorn I've ever had! Will definitely order again!" - Jane D.</p>
+            </blockquote>
+            <blockquote>
+                <p>"Amazing flavors and quick delivery!" - Mark T.</p>
+            </blockquote>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-image">
+                <img src="c:\Users\muham\Documents\WhatsApp Image 2024-10-08 at 11.38.58_212ae3f8.jpg" alt="Popcorn Flavor 1" style="width: 100%; max-width: 300px;">
+            </div>
+            <div class="gallery-image">
+                <img src="c:\Users\muham\Documents\WhatsApp Image 2024-10-08 at 11.38.42_e418652a.jpg" alt="Popcorn Flavor 2" style="width: 100%; max-width: 300px;">
+            </div>
+            <!-- Add more images as needed -->
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Popcorn Paradise, we believe in creating delicious, freshly popped popcorn using only the finest ingredients. Our mission is to provide you with a delightful snacking experience.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email:Hauwakabir2000@gmail.com</p>
+            <p>Follow us on social media!</p>
+            <p>phone number:07011783933</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Popcorn Paradise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
